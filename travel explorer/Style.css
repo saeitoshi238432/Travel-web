@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #84fab0, #8fd3f4, #fccb90);
+  background-size: 1400% 1400%;
+  animation: gradientShift 30s ease infinite;
+  color: #333;
+}
+
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.search-container,
+.more-info-container {
+  width: 45%;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.images img {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
